@@ -8,9 +8,8 @@
         
         <header>
                 <div class="navbar">
-                <a href="page_principal.php" ><img src="image/logo_blanc.png" alt="Logo BMX"></a>
+                <a href="index.php" ><img src="image/logo_blanc.png" alt="Logo BMX"></a>
                     <ul class="menu">
-                        <li><a href="page_principal.php">Acceuil</a></li>
                         <li><a href="equipe_membre.php">Equipe & Membre</a></li>
                         <li><a href="calendrier.php">Calendrier</a></li>
                         <li><a href="evenement.php">Evènement</a></li>
