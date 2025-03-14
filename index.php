@@ -28,35 +28,8 @@
 </head>
 <body>
 
-    <header>
-        <div class="navbar">
-        <a href="index.php" ><img src="image/logo_blanc.png" alt="Logo BMX"></a>
-            <ul class="menu">
-                <li><a href="equipe_membre.php">Equipe & Membre</a></li>
-                <li><a href="calendrier.php">Calendrier</a></li>
-                <li><a href="evenement.php">Evènement</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="boutique.php">Boutique</a></li>
-                <li><a href="FAQ.php">FAQ</a></li>
-                <li><a href="adhesion.php">Adhésion</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- JavaScript pour la gestion de la class active -->
-    <script>
-        const menuLinks = document.querySelectorAll(".menu a");
-
-        menuLinks.forEach(link => {
-            if (link.href === window.location.href) {
-                link.classList.add("active");
-            } else {
-                link.classList.remove("active");
-            }
-        });
-    </script>
-    
-    
+<?php require_once(__DIR__ . '/header.php') ?>
+ 
     <main>
 
         <section>
@@ -125,41 +98,4 @@
         <?php require_once(__DIR__ . '/footer.php') ?>  
 
     </main>
-
-    <footer>
-        <div class="footerBis">
-            <div>
-                <a href="page_principal.php"><img src="image/logo_blanc.png" alt="Lode fond blanc" class="logoFooter"></a>
-            </div>
-
-            <div class="contactClub">
-                <h3>Adresse</h3>
-                <p>15200 Rue Sherbrook E Montreal, QC H1A 3P9.</p>
-                <h3>Nous contacter</h3>
-
-                <div class="contactItem">
-                    <img src="image/Icone_footer.webp" alt="télépone">
-                    <p>543-678-3459</p>
-                </div>
-                <div class="contactItem">
-                    <img src="image/Icone_footer2.webp" alt="mail">
-                    <p>bmxmontreal@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="lienSociaux">
-                <h3>Reseaux Sociaux</h3>
-                <a href="https://www.facebook.com/bmxmontreal/"><img src="image/messenger_2.png"></a>
-                <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbmxmontreal%2F&is_from_rle"><img src="image/instagram_2.png"></a>
-            </div>
-        </div>
-            <div class="footerLinks">
-                    <a href="">Politique de confidentialité</a>
-                    <a href="">Mention légal</a>
-                    <a href="temoin.php">Témoin & Cookies</a>
-            </div>
-
-    </footer>
-
-</body>
 </html>
